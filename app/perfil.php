@@ -41,7 +41,8 @@
         <?php
         echo '
         <ul>
-            <img class="profile-img" src="../img/logo2.png" alt="">
+            
+            <img src="https://thispersondoesnotexist.com/" alt="Persona generada aleatoriamente" class="profile-img">
             <li>'. $nombreCompleto .'</li>
             <li>'. $correo .'</li>
             <li>'. $usuario .'</li>
