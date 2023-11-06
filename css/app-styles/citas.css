@@ -1,0 +1,132 @@
+/*recursos import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root {
+    --color1: #aeafb0eb;
+    --color2: #ededed9a;
+    --color3: #478DAE;
+}
+
+:root {
+    --fondo1: #202020;
+    --fondo2: #ebebeb;
+    --fondo3: #d9d9d9;
+    --verde: #2EB000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #F8F9F9;
+    overflow-y: hidden;
+}
+
+.section-3 {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2% 5%;
+    height: 85vh;
+}
+
+.contenedor {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    height: 85vh;
+}
+
+.caja2 {
+    width: 60%;
+    padding: 25px 30px 5px 30px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+h3 {
+    font-size: 1.7rem;
+}
+
+.titulo-agendar, h2 {
+    margin-left: 35%;
+    font-size: 2rem;
+}
+
+label{
+    font-size: 1.3rem;
+    margin: 8px 0 5px 0;
+}
+
+input, select, textarea {
+    font-size: 1.2rem;
+    width: 95%;
+    border-radius: 20px;
+    padding: 7px;
+    border: 1px solid var(--fondo1);
+}
+
+.moto, .tiempo{
+    margin-top: 2%;
+    display: flex;
+}
+
+.moto > label, .tiempo > label {
+    margin-right: 2%;
+}
+
+#name-moto, #modelo, #fecha, #hora {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#btn {
+    background-color: var(--verde);
+    border: 3px solid var(--fondo3);
+    color: var(--fondo3);
+    border-radius: 20px;
+    margin-left: 10%;
+    width: 80%;
+    height: 10%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .8s;
+    font-size: 1.2rem;
+}
+
+#btn:hover {
+    background-color: var(--fondo3);
+    border: 3px solid var(--verde);
+    color: var(--verde);
+    transform: scale(1.1);
+}
+
+/* primera caja */
+
+.caja1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 40%;
+    padding: 20px;
+    overflow-y: scroll;
+    border-radius: 20px;
+
+}
+
+.caja1 .cubos {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.caja1 .cubos p {
+    margin-top: 8px;
+    font-size: 1.2rem;
+}

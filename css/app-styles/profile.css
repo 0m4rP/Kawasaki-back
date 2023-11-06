@@ -1,0 +1,107 @@
+/*recursos import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root {
+    --color1: #aeafb0eb;
+    --color2: #ededed9a;
+    --color3: #478DAE;
+}
+
+:root {
+    --fondo1: #202020;
+    --fondo2: #ebebeb;
+    --fondo3: #d9d9d9;
+    --verde: #2EB000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* parte izquierda del perfil */
+
+body {
+    background-color: #F8F9F9;
+    overflow-y: hidden;
+}
+
+.perfil {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.perfil-usuario {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil-usuario ul .profile-img {
+    width: 200px;
+    height: 150px;
+    margin: 50px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.perfil-usuario ul {
+    margin-bottom: 80px;
+}
+
+.perfil-usuario ul li{
+    list-style: none;
+    color: var(--fondo1);
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin: 20px 0;
+    font-family: 'Roboto Serif', serif;
+}
+
+
+.perfil-usuario .salir {
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--fondo1);
+    transition: all 1s;
+}
+
+.perfil-usuario .salir:hover {
+    color: var(--verde);
+    transform: scale(1.5);
+}
+
+/* parte derecha del perfil */
+
+.moto {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moto .moto-img{
+    width: 60%;
+}
+
+.moto h1 {
+    font-size: 2rem;
+    font-family: 'Roboto Serif', serif;
+}
+
+.moto p{
+    font-size: 1.5rem;
+    color: var(--fondo1);
+    margin: 0 0 5px 0; 
+    font-family: 'Roboto Serif', serif;
+}

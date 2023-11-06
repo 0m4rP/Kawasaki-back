@@ -1,0 +1,72 @@
+body.fondo {
+    background-image: url('../img/fondo1.jpg');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    /* background-color: #478DAE; */ /* Color de fondo predeterminado */
+    transition: background-color 0.3s;
+}
+
+body.fondo #container .toggle {
+    background-color: #9a86fd; /* Color del interruptor en modo claro */
+    transform: translateX(0);
+}
+
+body.fondo #container .toggle::before {
+    background-color: #fff; /* Color del botón en modo claro */
+}
+
+body.dark-mode.fondo {
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(44, 44, 44); */ /* Color de fondo en modo oscuro */
+}
+
+
+body.dark-mode.fondo #container .toggle {
+    background-color: #ffdb70; /* Color del interruptor en modo oscuro */
+    transform: translateX(0px);
+}
+
+
+body.dark-mode.fondo #container .toggle::before {
+    transform: translateX(26px); /* Posición del botón en modo oscuro */
+}
+
+#container {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle {
+    /* Estilos básicos del interruptor */
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #9a86fd; /* Color del interruptor */
+    border-radius: 34px;
+    transition: background-color 0.4s; /* Transición de color al cambiar de modo */
+    cursor: pointer;
+    /* Otros estilos según sea necesario */
+}
+
+.toggle::before {
+    /* Estilos del botón del interruptor */
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #fff; /* Color del botón */
+    transition: transform 0.4s; /* Transición de transformación al cambiar de modo */
+}
+
+#container.dark-mode .toggle {
+    background-color: #ffdb70; /* Color del interruptor en modo oscuro */
+}
+

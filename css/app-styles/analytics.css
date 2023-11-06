@@ -1,0 +1,29 @@
+/*recursos import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root {
+    --color1: #aeafb0eb;
+    --color2: #ededed9a;
+    --color3: #478DAE;
+}
+
+:root {
+    --fondo1: #202020;
+    --fondo2: #ebebeb;
+    --fondo3: #d9d9d9;
+    --verde: #2EB000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.grafico {
+    width: 1000px !important;
+    height: 400px !important;
+}

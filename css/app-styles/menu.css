@@ -1,0 +1,136 @@
+/*recursos import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root {
+    --color1: #aeafb0eb;
+    --color2: #ededed9a;
+    --color3: #478DAE;
+}
+
+:root {
+    --fondo1: #202020;
+    --fondo2: #ebebeb;
+    --fondo3: #d9d9d9;
+    --verde: #2EB000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+nav {
+    background-color: var(--fondo1);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--fondo2);
+    padding-bottom: 10px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logos .logo1{
+    width: 80px;
+}
+
+.logos .logo2 {
+    width: 200px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding-right: 100px;
+    font-size: 1.2rem;
+}
+
+.item_menu {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all .8s;
+}
+
+.item_menu:hover {
+    color: var(--verde);
+}
+
+/* notificacion */
+
+
+button.campana {
+    color: var(--fondo2);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+button.campana:hover {
+    color: var(--verde);
+    
+}
+
+
+/* menu hamburguesa */
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--fondo2);
+    transition: all 1s;
+}
+
+.profile:hover {
+    color: var(--verde);
+}
+
+.profile i {
+    margin-right: 40px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* .menu-right{
+    flex-direction: column;
+    display: none;
+}
+
+.menu-right_visible {
+    background-color: rgba(0, 0, 0, 0.871);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+} */
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    nav ul {
+        display: none;
+    }
+}
+

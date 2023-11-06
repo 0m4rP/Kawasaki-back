@@ -1,0 +1,42 @@
+:root {
+    --fondo1: #202020;
+    --fondo2: #ebebeb;
+    --fondo3: #d9d9d9;
+    --verde: #2EB000;
+}
+
+.modal-dialog {
+    margin-top: 50px;
+    width: 70%;
+    max-width: none;
+    border-radius: 15px;
+}
+
+.modal .modal-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal-header {
+    text-align: center !important;
+    display: block;
+}
+
+.btn_register {
+    color: #1b1515;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 0 var(--color1);
+    transition: ease-out 0.6s;
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px 0 0 24px;
+    border: none;
+}
+
+.btn_register:hover {
+    box-shadow: inset 700px 0 0 0 var(--verde);
+    color: #fff;
+    border: none;
+}
